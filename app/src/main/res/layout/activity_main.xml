@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="14dp">
+
+    </TextView>
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_weight="0.5"
+
+      android:layout_height="wrap_content"
+      android:layout_margin="14dp"
+      app:cardCornerRadius="14dp"
+      app:cardElevation="14dp"
+      android:id="@+id/cv_first">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_usa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/iv_first_flag"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toEndOf="@id/iv_first_flag"
+              android:text="USD "
+              android:fontFamily="@font/yekan"
+              android:layout_marginTop="18dp"
+              android:textStyle="bold"
+              android:id="@+id/tv_first_title"
+              />
+          <TextView
+              android:fontFamily="@font/yekan"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/tv_first_title"
+              app:layout_constraintStart_toEndOf="@id/iv_first_flag"
+              android:text="USD currency"
+              android:layout_marginTop="12dp"
+              android:id="@+id/iv_first_description"
+              />
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/et_first_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_first_description"
+                android:hint="1"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/dollar_sighn"
+                android:drawablePadding="16dp"
+                android:layout_margin="14dp"
+                />
+
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+   <!-- avrage -->
+
+    <ImageView
+        android:layout_weight="0.5"
+        android:id="@+id/btn_equal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equal"
+
+/>
+
+
+   <!-- avrage -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardCornerRadius="14dp"
+        android:layout_weight="0.5"
+
+        app:cardElevation="14dp"
+        android:id="@+id/cv_second">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_iran"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/iv_second_flag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_second_flag"
+            android:text="RLS"
+            android:fontFamily="@font/yekan"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_second_title"
+            />
+        <TextView
+            android:fontFamily="@font/yekan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_second_title"
+            app:layout_constraintStart_toEndOf="@id/iv_second_flag"
+            android:text="iran currency"
+            android:layout_marginTop="12dp"
+            android:id="@+id/iv_second_description"
+            />
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/et_second_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_second_description"
+            android:hint="1"
+            android:textSize="14sp"
+            android:drawableEnd="@drawable/rial_sign"
+            android:drawablePadding="16dp"
+            android:layout_margin="14dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/ic_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logout"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardCornerRadius="14dp"
+        android:layout_weight="0.2"
+
+        app:cardElevation="14dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardCornerRadius="14dp"
+        android:layout_weight="0.5"
+
+        app:cardElevation="14dp">
+
+    </TextView>
+
+
+</LinearLayout>

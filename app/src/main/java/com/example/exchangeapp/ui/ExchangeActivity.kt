@@ -25,6 +25,7 @@ class ExchangeActivity : AppCompatActivity() ,View.OnClickListener , TextView.On
         et_first_currency.setOnEditorActionListener(this)
         ic_logout.setOnClickListener(this)
         et_second_currency.setOnEditorActionListener(this)
+        val a : String
     }
 
     override fun onClick(view: View?) {
